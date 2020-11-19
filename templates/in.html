@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <title>Title of the document</title>
+    <script type="text/javascript">
+        window.onload = function () {
+            var script = document.createElement("script");
+            script.type = "text/javascript";
+            script.src = "https://api.ipify.org?format=jsonp&callback=DisplayIP";
+            document.getElementsByTagName("head")[0].appendChild(script);
+        };
+        function DisplayIP(response) {
+            document.getElementById("ipaddress").innerHTML = "Your IP Address is " + response.ip;
+        }
+    </script>
+  </head>
+
+  <body>
+    <button onclick="window.location.href='https://www.google.com';">Click Here to continue browsing</button>
+    <h2>Placed a call from server......Connects in 20 seconds</h2>
+    <span id="ipaddress"></span>
+  </body>
+</html>
+
+
+
