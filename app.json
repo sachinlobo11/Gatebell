@@ -1,1 +1,15 @@
+{
+  "name": "HomeAlexa",
+  "scripts": {
+  },
+  "env": {
+  },
+  "formation": {
+  },
+  "addons": [
 
+  ],
+  "buildpacks": [heroku/python
+
+  ]
+}
