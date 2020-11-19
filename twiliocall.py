@@ -1,6 +1,7 @@
 from twilio.rest import Client
 from flask import Flask, redirect, url_for,render_template
 app= Flask(__name__)
+import os
 
 @app.route("/")
 def home():
@@ -28,4 +29,9 @@ def click():
 
 
 if __name__=="__main__":
-    app.run(debug=False,host='192.168.0.102')
+    port = int(os.getenv('PORT', 5000))
+
+    print("Starting app on port %d" % port)
+
+    app.run(debug=True, port=port, host='0.0.0.0')
+    
