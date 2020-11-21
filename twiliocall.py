@@ -15,8 +15,8 @@ def click():
 
     call = client.calls.create(
                             url='http://demo.twilio.com/docs/voice.xml',
-                            to='+918747917217',
-                            from_='+918746878795'
+                            to='+918746878795',
+                            from_='+918747917217'
                         )
 
     print(call.sid)
