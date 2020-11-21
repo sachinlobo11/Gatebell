@@ -8,8 +8,8 @@ def home():
     return render_template('index.html')
 @app.route("/oncall")
 def click():
-    account_sid = 'ACe97016ec1e8b3ad790572a389c0cda64'
-    auth = 'd92ba7c8deab6ae8de7bc20fcdf4ec09'
+    account_sid = 'ACe97016ec1e8b3ad790572a389c0cda'
+    auth = ''
   
     client = Client(account_sid, auth)
 
